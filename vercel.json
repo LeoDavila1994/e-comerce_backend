@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "npm start"
+    }
+  ],
+  "routes": [{
+    "src": "/api/v1/users",
+    "dest": "users.route.js"
+  },{
+    "src":"/api/v1/products",
+    "dest": "products.route.js"
+  },{
+    "src":"/api/v1/cart",
+    "dest": "cart.route.js"
+  }]
+}

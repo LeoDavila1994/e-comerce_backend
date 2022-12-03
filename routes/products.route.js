@@ -8,7 +8,7 @@ const { categoryExist, categoryExistById, productExist, categoryExistToCreatePro
 
 const { createCategory, getAllCategories, updateCategory, createProduct, getAllProducts, getProductById, updateProduct, deleteProduct } = require("../controllers/products.controller");
 
-const { createProductValidator, productUpdateValidator } = require("../middlewares/validators.middlewares");
+const { productUpdateValidator } = require("../middlewares/validators.middlewares");
 
 const { upload } = require("../utils/multer.utils");
 
