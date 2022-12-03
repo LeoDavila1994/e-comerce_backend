@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "app.js",
-      "use": "npm run start"
+      "use": "npm"
     }
   ],
   "routes": [{
