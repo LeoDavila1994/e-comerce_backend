@@ -16,7 +16,7 @@ const startServer = async () => {
 
         await db.sync();
 
-        app.listen(process.env.PORT_LISTENER, () => {
+        app.listen(4000, () => {
             console.log("Express app runing");
         });
     } catch (error) {
