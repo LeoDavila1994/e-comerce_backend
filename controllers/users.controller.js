@@ -49,7 +49,7 @@ const createUser = catchAsync(async (req, res, next) => {
 
         user.password = undefined;
 
-        const token = jwt.sign({id: user.id}, process.env.JWT_SECRET || "00c387de8b4afd2031343bba6aaf38d8b45088d7259851f106c0b63cb5ad3431b42673870d663d1f3f63a8c5c9c01596b9ac1e93924b83c410cd12653a518c85", {expiresIn: "365d"});
+        const token = jwt.sign({id: user.id}, process.env.JWT_SECRET, {expiresIn: "365d"});
 
         res.status(200).json({
             status: "success",
